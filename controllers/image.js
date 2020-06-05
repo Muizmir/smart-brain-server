@@ -1,7 +1,7 @@
 const Clarifai = require('clarifai');
 
 const app = new Clarifai.App({
-    apiKey: '785115521ea341a18f582e8334a6b5ab'
+    apiKey: '81a9503c90a94fae8b7bad1ac9a230ee'
 });
 
 const handleApiCall = (req, res) => {
@@ -10,7 +10,7 @@ const handleApiCall = (req, res) => {
             res.json(data);
         })
         .catch(err => {
-            res.status(400).json(err)
+            res.status(400).json('Unable to work with Api Call')
         })
 }
 
